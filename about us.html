@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+        }
+
+        .product-card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            margin-top: auto; 
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .navbar-nav {
+            gap: 20px;
+        }
+
+        .navbar-nav .nav-link {
+            text-align: center;
+        }
+
+        .navbar-buttons .btn {
+            margin: 0 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .navbar-buttons .btn i {
+            font-size: 1rem;
+        }
+
+       
+        .about-us {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+
+        .about-us h2 {
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+  
+        .product-cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .product-card {
+            width: 23%; 
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ecommerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Products page.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about us.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html">Contact</a></li>
+                </ul>
+                <div class="navbar-buttons">
+                    
+                      
+                    <a href="./login.html">
+                        <button class="btn btn-outline-dark"> <i class="fas fa-sign-in-alt"></i> Login </button></a>
+                          
+                       
+                      
+                      
+                      <a href="./register.html">
+                        <button class="btn btn-outline-dark"> <i class="fas fa-user-plus"></i> Register </button></a>
+                          
+                       
+                      
+
+                    <button class="btn btn-outline-dark" id="cart-button" onclick="redirectToCart()">
+                        <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>We are a leading ecommerce platform offering the best products across various categories. Our mission is to provide customers with an outstanding online shopping experience. With a wide range of quality products and exceptional customer service, we aim to be your one-stop shop for everything you need.</p>
+    </div>
+
+ 
+    <div class="container">
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="./assets/MENS.jpeg" class="card-img-top" alt="Mens Clothing">
+                <div class="card-body">
+                    <h5 class="card-title">Mens Clothing</h5>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./assets/WOMENS.jpeg" class="card-img-top" alt="Womens Clothing">
+                <div class="card-body">
+                    <h5 class="card-title">Womens Clothing</h5>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./assets/JEWELLERY.webp" class="card-img-top" alt="Jewelry">
+                <div class="card-body">
+                    <h5 class="card-title">Jewelry</h5>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./assets/ELECTRONICS.jpeg" class="card-img-top" alt="Electronics">
+                <div class="card-body">
+                    <h5 class="card-title">Electronics</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <footer class="footer">
+        Made with ❤️ by Naveen
+    </footer>
+</body>
+
+</html>
